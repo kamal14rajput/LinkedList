@@ -21,7 +21,11 @@ public class LinkedListMain {
 		System.out.println("\nAdd number in between");
 		mylinkedlist.append(56);
 		mylinkedlist.append(70);
-		mylinkedlist.insertAt(7, 30);
+		mylinkedlist.insertAt(1, 30);
+		mylinkedlist.display();
+		
+		System.out.println("\nDelete First element");
+		mylinkedlist.popFirst();
 		mylinkedlist.display();
 	}
 
