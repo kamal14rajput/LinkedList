@@ -29,6 +29,34 @@ public class MyLinkedList<T> {
 		newNode.next = head;
 		head = newNode;	
 	}
+	public int size() {
+		int count = 0;
+		Node<T> temp = head;
+		while (temp != null) {
+			temp = temp.next;
+			count++;
+		}
+		return count;
+	}
+	public void insertAt(int pos, T item) {
+		if (pos > size()) {
+			System.out.println("out of position");
+			return;
+		}
+		Node<T> node = new Node<T>(item);
+		if (pos == 0) {
+			node.next = head;
+			head = node;
+			return;
+		}
+		Node<T> temp = head;
+
+		for (int i = 0; i < pos - 1; i++) {
+			temp = temp.next;
+		}
+		node.next = temp.next;
+		temp.next = node;
+	}
 	
 	public void display() {
 		Node<T> temp = head;
