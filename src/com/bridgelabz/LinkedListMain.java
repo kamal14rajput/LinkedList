@@ -17,12 +17,14 @@ public class LinkedListMain {
 		mylinkedlist.append(30);
 		mylinkedlist.append(70);
 		mylinkedlist.display();	
+		mylinkedlist.clearList();
 		
 		System.out.println("\nAdd number in between");
 		mylinkedlist.append(56);
 		mylinkedlist.append(70);
 		mylinkedlist.insertAt(1, 30);
 		mylinkedlist.display();
+		
 		
 		System.out.println("\nDelete First element");
 		mylinkedlist.popFirst();
@@ -35,6 +37,16 @@ public class LinkedListMain {
 		mylinkedlist.append(70);
 		mylinkedlist.popLast();
 		mylinkedlist.display();
+		
+		System.out.println("\nFinding the element from the list");
+		if(mylinkedlist.search(30))
+		{
+			System.out.println("Element Found");
+		}
+		else
+		{
+			System.out.println("Element not found");
+		}
 	}
 
 }
