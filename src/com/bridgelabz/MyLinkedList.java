@@ -101,6 +101,18 @@ public class MyLinkedList<T> {
 		}
 		return false;
 	}
+	public int index(T item) {
+		int index = 0;
+		Node<T> temp = head;
+		while (temp != null) {
+			if (item.equals(temp.data)) {
+				return index;
+			}
+			index++;
+			temp = temp.next;
+		}
+		return -1;
+	}
 	
 	void clearList()
     {
