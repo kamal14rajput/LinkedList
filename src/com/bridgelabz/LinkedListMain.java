@@ -17,6 +17,12 @@ public class LinkedListMain {
 		mylinkedlist.append(30);
 		mylinkedlist.append(70);
 		mylinkedlist.display();	
+		
+		System.out.println("\nAdd number in between");
+		mylinkedlist.append(56);
+		mylinkedlist.append(70);
+		mylinkedlist.insertAt(7, 30);
+		mylinkedlist.display();
 	}
 
 }
