@@ -27,6 +27,14 @@ public class LinkedListMain {
 		System.out.println("\nDelete First element");
 		mylinkedlist.popFirst();
 		mylinkedlist.display();
+		mylinkedlist.clearList();
+		
+		System.out.println("\nDelete Last element");
+		mylinkedlist.append(56);
+		mylinkedlist.append(30);
+		mylinkedlist.append(70);
+		mylinkedlist.popLast();
+		mylinkedlist.display();
 	}
 
 }
