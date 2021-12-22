@@ -73,6 +73,25 @@ public class MyLinkedList<T> {
 		return (T) n.data;
 	}
 	
+	public T pop(int pos) {
+		int index = 0;
+		Node<T> n = head;
+		if (pos == 0) {
+			head = head.next;
+
+			return (T) n.data;
+		}
+		Node<T> prev = null;
+		while (index != pos) {
+			prev = n;
+			n = n.next;
+			index++;
+		}
+		prev.next = n.next;
+
+		return (T) n.data;
+	}
+	
 	public T popLast() {
 		T data = null;
 		if (head.next == null) {
