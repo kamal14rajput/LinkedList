@@ -2,15 +2,12 @@ package com.bridgelabz;
 
 public class LinkedListMain {
 
-	public static<T> void main(String[] args) {
-		MyLinkedList<T> mylinkedlist = new MyLinkedList<>();
+	public static void main(String[] args) {
+		MyLinkedList<Integer> mylinkedlist = new MyLinkedList<Integer>();
 		
-		Node<Integer> node1 = new Node<>(56);
-        Node<Integer> node2 = new Node<>(30);
-        Node<Integer> node3 = new Node<>(70);
-		
-        node1.setNext(node2);
-        node2.setNext(node3);
+		mylinkedlist.add(70);
+		mylinkedlist.add(30);
+		mylinkedlist.add(56);
 		
 		mylinkedlist.display();
 	}
