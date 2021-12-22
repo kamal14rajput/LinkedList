@@ -6,6 +6,21 @@ public class MyLinkedList<T> {
 	public void list(){
 		Node head = null;
 	}
+	public void append(T data) {
+		Node<T> node = new Node<T>(data);
+		if (head == null) {
+			head = node;
+			return; 
+		}
+		else 
+		{
+			Node<T> temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = node;
+		}
+	}
 	
 	public void add(T data)
 	{
