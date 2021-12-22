@@ -66,4 +66,15 @@ public class MyLinkedList<T> {
 		}
 	System.out.println(temp.data);
 	}
+	
+	public T popFirst() {
+		Node<T> n = head;
+		head = head.next;
+		return (T) n.data;
+	}
+	
+	void clearList()
+    {
+        head = null;
+    }
 }
