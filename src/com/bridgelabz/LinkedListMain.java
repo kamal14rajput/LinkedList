@@ -47,6 +47,14 @@ public class LinkedListMain {
 		{
 			System.out.println("Element not found");
 		}
+		
+		mylinkedlist.clearList();
+		System.out.println("Add element after 30");
+		mylinkedlist.append(56);
+		mylinkedlist.append(30);
+		mylinkedlist.append(70);
+		mylinkedlist.insertAt(mylinkedlist.index(30)+1, 40);
+		mylinkedlist.display();
 	}
 
 }
